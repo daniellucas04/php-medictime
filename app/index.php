@@ -72,9 +72,9 @@
       <ul class="list-group">
         <?php
           $medication = $database->select("*");
-          $ativo = true;
+          $ativo = false;
           foreach ($medication as $data) {
-            if($data['status'] != "Ativo") $ativo = false;
+            if($data['status'] == "Ativo") $ativo = true;
         ?>
           <li class='list-group-item medication-item'>
             <div class='d-flex align-items-center justify-content-between'>
@@ -89,7 +89,7 @@
                 <span class='medication-status'>
                   <?php 
                     echo $ativo ? "<ion-icon name='time-sharp'></ion-icon>" : "<ion-icon class='time' name='checkmark-sharp'></ion-icon>"
-                  ?>
+                    ?>
                 </span>
               </span>
             </div>

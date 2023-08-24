@@ -49,6 +49,7 @@
 
 .medication-item:hover{
   cursor: default;
+  background-color: rgb(243, 243, 243);
   box-shadow: none;
 }
 
