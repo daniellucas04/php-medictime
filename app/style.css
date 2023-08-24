@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Ubuntu&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Inter', sans-serif;
+  line-height: 1.3rem;
+}
+
+.logo-medic{
+  font-size: 2rem;
+  margin-right: -3px;
+}
+
+.logo-typho{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.main-page{
+  margin: 3rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+
+}
+
+.form-medication{
+  border: 1px solid rgba(71, 71, 71, 0.308);
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  padding: 1rem;
+  width: 30rem;
+
+  transition: all .3s ease;
+}
+
+.form-medication:hover{
+  box-shadow: none;
+}
+
+.medication-item{
+  transition: all .3s ease;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.medication-item:hover{
+  cursor: default;
+  box-shadow: none;
+}
+
+.medication-card p{
+  font-size: 12px;
+  height: 0.2rem;
+}
+
+.medication-status{
+  font-size: larger;
+  width: 0;
+}
