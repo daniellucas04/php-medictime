@@ -67,7 +67,7 @@
         <button type="submit" class="btn btn-success">Confirmar</button>
       </form>
     </aside>
-    <div>
+    <div class="d-flex align-items-center flex-column">
       <h3>Lista de medicamentos</h3>
       <ul class="list-group">
         <?php
@@ -88,10 +88,18 @@
               <?=$data["hour"]?>
                 <span class='medication-status'>
                   <?php 
-                    echo $ativo ? "<ion-icon name='time-sharp'></ion-icon>" : "<ion-icon class='time' name='checkmark-sharp'></ion-icon>"
-                    ?>
+                    echo $ativo ? "<ion-icon class='text-primary' name='time-sharp'></ion-icon>" : "<ion-icon class='text-success' name='checkmark-sharp'></ion-icon>"
+                  ?>
                 </span>
               </span>
+              <div class="edit-card">
+                <a href="#" class="text-primary bg-transparent border border-0 edit" style="font-size: 1rem;">
+                  <ion-icon name="brush"></ion-icon>                
+                </a>
+                <a href="#" class="text-danger bg-transparent border border-0 delete" style="font-size: 1.4rem;">
+                  <ion-icon name="close-outline"></ion-icon>
+                </a>
+              </div>
             </div>
           </li>
         <?php
@@ -109,11 +117,5 @@
   integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+<script src="/js/index.js"></script>
 </html>
-
-<!--
-<?php
-        
-      ?>
--->
